@@ -7,8 +7,8 @@
 
 function inheritPrototype(SubType, SuperType){
     var prototype = Object.create(SuperType.prototype);
-    prototype.constructor = subType;
-    subType.prototype = prototype;
+    prototype.constructor = SubType;
+    SubType.prototype = prototype;
 }
 
 function SuperType(name) {
